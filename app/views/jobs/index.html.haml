@@ -1,0 +1,13 @@
+
+= content_tag :h1, current_user.welcome 
+
+
+-@jobs.each do |job|
+ %h2= link_to job.title, job
+ %p= job.company
+
+ = link_to "New Job", new_job_path
+
+
+
+= button_to "Logout", root_path
